@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="charset" content="utf-8">
+        <meta name="'viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Englebert&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/c6e3f0d504.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap" rel="stylesheet">
+         
+        <title>Had a Dream?</title>
+    </head>
+    <body>
+        <div class="nav"> 
+            <a class="logo" href="#">H<sub>D</sub></a><!-- Main Logo -->
+            <a id ='ROD' href="#">Read Other's Dreams</a>
+
+        
+            <ul class="hac">
+            <li><a href="#">Home</a></li><h1 style=" display:inline">|</h1><!-- added a h1 tag of "|" to seperate the navigation links-->
+            <li><a href="#">About</a></li><h1 style=" display:inline">|</h1>
+            <li><a href="#">Contact</a></li>
+            </ul>
+            
+        </div>
+        <hr>
+
+        <br><br><br>
+        <h1 class="heading">Had a Dream? </br> Let's talk about it</h1><br><br><!--Main Heading here-->
+        
+            <p class="paragraph">
+                Great Morning, Afternoon, Night,etc. Did you had a strange dream but you have no one to tell
+                about it? No Problem! We will hear you.Tell us what you see,what you wondor,which one is
+                the strangest one,and Did You Like it or Not?, we will hear everything.
+            </p>
+            <br>
+            <form class="dream-form"><!-- form to submit dreams whether person wants to stay anonymous or provide his name-->
+                    <input class="input-btn" type="text"  id="name" placeholder="Name(optional)"><br><br>
+                    <textarea class="input-btn" id="dream" type="text" placeholder="Tell us about your dream..."  required></textarea><br><br>
+                    <button id="submit-btn" type="submit">Publish</button><!-- Add a submit type here--> 
+            </form>
+            <br>
+        <h1 id="about">About</h1><!-- About Us-->
+        <br>
+        <div class="paragraph">
+            <p>
+                We are in same period of time, but not have same type of thoughts... We all have different views,different thinking,different life. Then why keep this all only to ourselves? Let's share
+                it with the whole world.
+            </p><br>
+            <p>
+                Everyday people dream a Dream but forget about it just in upcoming seconds or some hours... and
+                that imagination would never be brought back again, So share it with everybody else, show them
+                that how the world you see in your Dreams. 
+            </p><br>
+            <p>
+                We keep all your Dreams anonymous to the world if you want, or you can happily tell us
+                about yourself too. We will gladly accept you.
+            </p><br>
+        </div>
+        <div id="rod-down-div">
+            <h1 id="rod-down">Read Others Dreams</h1>
+            <br>
+            <div id="comment-list">
+                <ul>
+
+                </ul>
+                <form class="comment-form">
+                    
+                    <label for="name">Name (optional):</label>
+                    <input type="text" id="comment-name" name="name" placeholder="Your name..."><br><br>
+                    <label for="comment">Leave a comment:</label>
+                    <textarea id="comment" name="comment" placeholder="Write your comment here..." required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+        <br><br>
+        <hr>
+
+        </hr>
+        <ul class="foot">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        
+        <div id="alert">
+            <p id="inner-alert">Hi</p>
+        </div>
+
+        <script type="text/javascript" src="index.js"></script>
+    </body>
+</html>

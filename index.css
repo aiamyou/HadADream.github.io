@@ -1,0 +1,288 @@
+*{
+    padding: 0;
+    margin:0;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background:linear-gradient(rgba(179, 0, 255, 0.785),
+                               rgba(43, 0, 201, 0.881),
+                               rgba(89, 63, 185, 0.881),
+                               rgba(11, 30, 171, 0.863));
+}
+ 
+
+ul{
+    list-style: none;
+}
+.logo{
+    text-decoration: none;
+    font-size: 43px;
+    color: rgba(32, 252, 200, 0.913);
+    display:inline; 
+
+    font-family: 'Just Me Again Down Here', cursive;
+    margin-left: 13px;   
+}
+.logo:hover{
+    content:"";
+    animation-name: logo;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hac {
+    display:inline;
+    float:right;
+    margin-top: 2.2vh;
+}
+.hac li {
+    font-size: 30px;
+    display:inline-block;
+    border-radius: 10px;
+    padding: 0px 5px;
+    margin: 0px 5px;
+    transition:all 500ms ease;
+}
+.hac li:hover{
+    transform: scale(1.0565);
+    padding: 0 8px;
+    margin: 0 8px;
+    animation-name: nav-border;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    
+
+}
+
+
+.hac li a{
+    font-family: 'Balsamiq Sans', cursive;
+    text-decoration: none;
+    color:black;
+    transition: all 630ms ease;
+    
+}
+
+.hac li a:hover{
+    color:#fff;
+}
+
+.heading{
+    text-align: center;
+    font-size: 40px;
+    font-family:"Englebert",Sans-serif;
+    animation-name: slide-down;
+    animation-duration: 3s;
+}
+
+
+.paragraph{
+    text-align: center;
+    font-size: 35px;
+    padding: 0 10%;
+    font-family: 'comic neue',cursive;
+    
+}
+
+
+.input-btn{
+    font-family: 'Balsamiq Sans', cursive;
+    border-radius: 10px;
+    text-align: center;
+    border:none;
+
+}
+
+#name{
+    
+    text-align: center;
+    width:300px;
+    height:40px;
+    font-size:25px;
+    
+
+}
+
+#dream{
+    
+    width:500px;
+    height:200px;
+    font-size: 30px;
+    text-align: left;
+}
+
+.dream-form{
+    text-align: center;
+    
+    
+    font-family: 'Monomaniac One', sans-serif;
+    font-size: 35px;
+}
+
+.comment-form{
+    font-family: 'Monomaniac One', sans-serif;
+    font-size: 35px;
+    text-align: center;
+}
+
+#comment-name{
+    text-align: center;
+    width:300px;
+    height:37px;
+    font-size:25px;
+    border-radius: 6px;
+    border: none;
+}
+#comment{
+    text-align: center;
+    width:300px;
+    height:100px;
+    font-size:25px;
+    border-radius: 6px;
+    border: none;
+    display: inline-block;
+}
+#submit-btn{
+    font-family:"Englebert",Sans-serif;
+    width:120px;
+    font-size: 30px;
+    border-radius: 10px;
+    border: none;
+    transition: all 0.5s ease;
+}
+
+#submit-btn:hover{
+    transform: scale(1.01);
+    color:#fff;
+    background:black;
+    padding: 2px 4px;
+    margin: 1px 2px;
+
+}
+
+#ROD{
+    font-size:33px;
+    display: inline-block;
+    font-family:  'Balsamiq Sans', cursive;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    color:#000;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+
+#ROD:hover{
+    color:#fff;
+    transform: scale(1.1) translateX(10px);
+    
+}
+
+
+#rod-down{
+    font-size:40px;
+    text-align: center;
+    font-family: "Englebert",Sans-serif;
+}
+
+table{
+    border:1px solid black;
+}
+
+.foot{
+    
+    text-align: center;
+
+}
+
+.foot li {
+    font-size: 30px;
+    display:inline-block;
+    margin:0px 20px;
+}
+
+.foot li a{
+    text-decoration: none;
+    color:#000000;
+}
+
+#about{
+    font-size: 45px;
+    font-family: "Englebert",Sans-serif;
+    text-align: center;
+}
+
+#alert{
+    opacity: 0;
+    display:none;
+    width:30vw;
+    height:50px;
+    position: fixed;
+    left:35%;
+    bottom: 3%;
+    text-align: center;
+    font-size: 30px;
+    font-family:  'Balsamiq Sans', cursive;
+    background:rgba(6, 226, 61, 0.913);
+    border-radius: 6px;
+    transition: all 1s ease;
+}
+
+
+
+
+#name-dream-rod{
+    border: 1px solid #000;
+    width: 80vw;
+    height:400px;
+    background:#fff;
+    text-align: center;
+    margin:auto;
+    list-style: none;
+    border-radius: 5px;
+}
+
+#comment-list{
+    width:80%;
+    margin: auto;
+    height: auto;
+}
+
+@keyframes nav-border{
+    from{border-bottom: 0px solid;border-left: 1px solid #000;}
+    to{border-bottom:1px solid #000000;border-left:1px solid #000}
+
+}
+
+@keyframes slide-down{
+    0%{transform:translatex(-120vw)}
+    40%{transform:translatex(150vh)}
+    45%{transform:translatex(-50px)}
+    50%{transform:translatex(50px)}
+    55%{transform:translatex(-40px)}
+    60%{transform:translatex(20px)}
+    65%{transform:translatex(-30px)}
+    100%{transform:translatex(0px)}
+}
+
+@keyframes logo{
+    0%{content: 'H';}
+    10%{content: 'a';}
+    20%{content: 'd';}
+    30%{content: 'A';}
+    50%{content: 'D';}
+    70%{content: 'r';}
+    80%{content: 'e';}
+    90%{content: 'a';}
+    100%{content: 'm';}
+}
